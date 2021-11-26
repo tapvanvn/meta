@@ -38,10 +38,9 @@ func Response(result string) {
 // #2: type
 // #3: path
 //example:
-// #1: meta length master.nodes 	`return the length of master.nodes stack`
-// #2: meta offset.0 master.nodes 	`return the first item on of master.nodes stack in string -> ""`
-// #3: meta value master.nodes.0 	`return the value in string of the `
-// #4: meta key master.nodes.0 		`return the key in string of the first element in master.nodes stack`
+// #1: meta length master.nodes 		`return the length of master.nodes stack`
+// #2: meta key master.nodes.0 			`return the key in string of the first element in master.nodes stack`
+// #3: meta value master.nodes.master-1 `return the value in string of the `
 
 type pair struct {
 	key   string
