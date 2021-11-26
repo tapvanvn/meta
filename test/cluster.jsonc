@@ -1,0 +1,25 @@
+{
+    "master":{
+        //# define this if this is multiple master cluster
+        //# remove if the cluster is single master node
+        "multiple": { 
+            //# load balancer for master. must be predefine in case multi-master cluster.
+            "load_balancer":"XX.XX.X.XX" 
+        },
+
+        //# list of master nodes in format : "hostname" : "mac address"
+        "nodes": { 
+            "master-1" : "DC:XX:XXXX:XX:XX",
+            "master-2" : "DC:XX:XXXX:XX:XY",
+            "master-3" : "DC:XX:XXXX:XX:XZ"
+        }
+    },
+    "worker": {
+        //# list of worker nodes in format : "hostname" : "mac address"
+        "nodes": { 
+            "worker-1" : "DC:XX:XXXX:XX:XA",
+            "worker-2" : "DC:XX:XXXX:XX:XB",
+            "worker-3" : "DC:XX:XXXX:XX:XC"
+        }
+    }
+}
